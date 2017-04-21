@@ -141,12 +141,13 @@ a.button.hover{
 	Bottom Section - Site Links
 ==================================================*/
 /*select any elements with a class of button-site-links*/
-.buttom-site-links {
-   bottom: 0 !important;
-   position: absolute;
-   width:100%;
-   background-color: #f2f2f2;
-   border-top: 1px solid #e4e4e4;
+
+.bottom-site-links {
+	bottom: 0 !important;
+  position: absolute;
+  width: 100%;
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
 }
 /*select any elements with a class of left-site-links*/
 .left-site-links,
@@ -165,7 +166,7 @@ a.button.hover{
     padding-right: 10px;
   }
 /*select any elements with a class of the left-site-links and find all li tags inside*/
-.left-site.-links li,
+.left-site-links li,
 /*and select any elements with a class of right-site-links and find all li tags inside*/
 .right-site-links li{
   list-style: none;
@@ -174,7 +175,7 @@ a.button.hover{
 }
 /*select any elements with this class right-site-links and find all li link tags inside then the 1st anchor tags inside*/
 .right-site-links li a:first-child {
-  padding-right:8px;
+  padding-right:0px;
 }
 /*select any elements with a class of left-site-links and find all li link tags inside then the 2nd achor tags inside*/
 .left-site-links li:nth-child(2),
@@ -191,3 +192,31 @@ a.button.hover{
    letter-spacing: 0.1px;
    font-size: 14px;
 }
+
+.search-buttons {
+  text-align: center;
+}
+
+/*@media (max-width: 600px) {
+  .left-site-links li {
+  display: inline-block;
+	float: none;
+  }*/
+
+@media (max-width: 625px) {
+  .search-box input {
+ 		width: 50%;
+		}
+		.left-site-links {
+			padding: 0;
+		}
+		.left-site-links li a{
+			margin: 1px;
+		}
+		.right-site-links li a {
+			margin: 0;
+		}
+		.right-site-links{
+			 padding: 0px;
+		}
+	}
